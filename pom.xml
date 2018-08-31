@@ -41,6 +41,13 @@
                 <version>${spring.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>

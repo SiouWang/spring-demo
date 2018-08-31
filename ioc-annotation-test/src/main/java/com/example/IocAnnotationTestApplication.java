@@ -8,11 +8,9 @@ public class IocAnnotationTestApplication {
 
     public static void main(String args[]) {
 
-        System.out.println("=======================================================================");
-
-        usingAnnotatedClasses();
-
-
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.example.*");
+        User user = (User) context.getBean("user");
+        user.printAddress();
     }
 
     /**
